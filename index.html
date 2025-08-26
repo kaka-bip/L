@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONHO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Playwrite+PL:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: auto;
+    background-color: pink;
+    font-family: "Playwrite PL", cursive;
+}
+
+.nav-bar{
+    background-color: white;
+    border: 2px solid black;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+}
+
+#li{
+    list-style: none;
+    text-decoration: none;
+    direction: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#Carta{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+h1{
+    text-align: center;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+#ass{
+    text-align: center;
+}
+
+#Carta-1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+img{
+width: 150px;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+/*caindo eu te amo*/
+    #love {
+      position: relative;
+      width: 100%;
+      height: 300px; /* altura da área */
+      background: transparent;
+      overflow: hidden;
+    }
+
+    .fall {
+      position: absolute;
+      top: -50px;
+      font-size: 2rem;
+      font-weight: bold;
+      color: red;
+      animation: cair linear forwards;
+    }
+
+    @keyframes cair {
+      to {
+        transform: translateY(350px);
+        opacity: 0;
+      }
+    }
+/*img*/
+
+#rany {
+  display: flex;
+  gap: 10px;
+  width: 200%; /* para duplicar e criar loop infinito */
+  animation: mover 20s linear infinite;
+}
+
+#rany img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    p { font-size: 0.9rem; }
+
+    #Carta, #Carta-1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #rany img { max-width: 120px; }
+
+    #love { height: 200px; }
+    .fall { font-size: 1.5rem; }
+
+    footer { font-size: 0.8rem; padding: 5px; }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <li id="li"><a href="#Carta">Cartinha</a></li>
+            <li id="li"><a href="#rany">Fotos</a></li>
+        </nav>
+    </header>
+    <section>
+        <h1>Carta de Amor</h1>
+        <div id="Carta">
+            <h2><strong>Minha querida Lorrany,</strong></h2>
+            <p>Desde que você entrou na minha vida, tudo ganhou mais cor e sentido. O seu sorriso ilumina meus dias e o simples pensamento em você já torna tudo mais leve. Quero que saiba que meu carinho por você é sincero e cresce a cada instante.Com todo meu amor,</p>
+            <p id="ass"><strong>Kauan</strong></p>
+        </div>
+    </section>
+    <section>
+        <div id="Carta-1">
+            <h2>나의 사랑하는 로라니,</h2>
+            <p>당신이 내 삶에 들어온 이후로 모든 것이 더 빛나고 의미 있어졌어요. 당신의 미소는 내 하루를 밝히고, 단지 당신을 생각하는 것만으로도 모든 것이 더 가벼워집니다. 당신을 향한 내 마음은 진실하며 시간이 지날수록 더욱 커지고 있어요.진심을 담아,</p>
+            <p id="ass"><strong>카우안</strong></p>
+        </div>
+    </section>
+    <!--Fotos-->
+    <section>
+    <div id="rany">
+        <img src="img/foto-1.png" alt="foto-1">
+        <img src="img/foto-2.png" alt="foto-2">
+        <img src="img/foto-3.png" alt="foto-3">
+        <img src="img/foto-4.png" alt="foto-4">
+        
+        <!-- duplicadas para criar efeito infinito -->
+        <img src="img/foto-1.png" alt="foto-1">
+        <img src="img/foto-2.png" alt="foto-2">
+        <img src="img/foto-3.png" alt="foto-3">
+        <img src="img/foto-4.png" alt="foto-4">
+    </div>
+    </section>
+    <section>
+        <div id="love">
+        </div>
+    </section>
+    <footer>Todos Direitos Reservados by Kauan &copy; 2025</footer>
+    <script>
+         // Efeito EU TE AMO caindo
+    const loveArea = document.getElementById("love");
+
+    function criarPalavra() {
+      const span = document.createElement("span");
+      span.classList.add("fall");
+      span.textContent = "EU TE AMO ❤️";
+      
+      // posição horizontal aleatória
+      span.style.left = Math.random() * (loveArea.offsetWidth - 100) + "px";
+      
+      // duração da queda aleatória
+      span.style.animationDuration = (2 + Math.random() * 3) + "s";
+      
+      loveArea.appendChild(span);
+
+      // remover depois que cair
+      setTimeout(() => {
+        span.remove();
+      }, 5000);
+    }
+
+    setInterval(criarPalavra, 700); // cria uma nova a cada 0.7s
+    </script>
+
+</body>
+</html>
